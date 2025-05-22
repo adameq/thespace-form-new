@@ -1,17 +1,21 @@
 import './App.css';
-import { Button } from '@/components/ui/button'; // Keep one example import
-import { Toaster as Sonner } from 'sonner'; // Keep for potential global use
+import { Toaster as Sonner } from 'sonner';
+import { MainForm } from './features/MainForm/MainForm';
 
 function App() {
   return (
     <>
-      <Sonner /> {/* Keep Sonner for global toast notifications */}
+      <Sonner />
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold">thespace_form_new</h1>
-        <p className="mt-2">
-          Tutaj rozpocznie sie aplikacja formularza.
-        </p>
-        <Button className="mt-4">Testowy Przycisk</Button>
+        <header className="mb-8">
+          <h1 className="text-3xl font-bold text-center">Formularz Aplikacyjny</h1>
+        </header>
+        <main>
+          <MainForm />
+        </main>
+        <footer className="mt-12 text-center text-sm text-gray-500">
+          <p>&copy; {new Date().getFullYear()} The Space. Wszelkie prawa zastrzeżone.</p>
+        </footer>
       </div>
     </>
   );
