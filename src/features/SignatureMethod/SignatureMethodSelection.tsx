@@ -118,9 +118,9 @@ const SignatureMethodSelection = () => {
       </h2>
       <RadioGroup defaultValue="osobiscie" className="space-y-3">
         {/* Option 1: Osobiście */}
-        <div className="flex items-start p-4 border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
-          <RadioGroupItem value="osobiscie" id="osobiscie" className="mr-3 mt-1" />
-          <div className="flex-1">
+        <div className="flex items-start p-4 border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors max-w-full overflow-hidden">
+          <RadioGroupItem value="osobiscie" id="osobiscie" className="mr-3 mt-1 flex-shrink-0" />
+          <div className="flex-1 min-w-0">
             <Label htmlFor="osobiscie" className="font-semibold text-base">
               Osobiście
             </Label>
@@ -133,9 +133,9 @@ const SignatureMethodSelection = () => {
         </div>
 
         {/* Option 2: Korespondencyjnie */}
-        <div className="flex items-start p-4 border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
-          <RadioGroupItem value="korespondencyjnie" id="korespondencyjnie" className="mr-3 mt-1" />
-          <div className="flex-1">
+        <div className="flex items-start p-4 border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors max-w-full overflow-hidden">
+          <RadioGroupItem value="korespondencyjnie" id="korespondencyjnie" className="mr-3 mt-1 flex-shrink-0" />
+          <div className="flex-1 min-w-0">
             <Label htmlFor="korespondencyjnie" className="font-semibold text-base">
               Korespondencyjnie
             </Label>
@@ -150,9 +150,9 @@ const SignatureMethodSelection = () => {
         </div>
 
         {/* Option 3: Przez aplikację mSzafir */}
-        <div className="flex items-start p-4 border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
-          <RadioGroupItem value="mszafir" id="mszafir" className="mr-3 mt-1" />
-          <div className="flex-1">
+        <div className="flex items-start p-4 border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors max-w-full overflow-hidden">
+          <RadioGroupItem value="mszafir" id="mszafir" className="mr-3 mt-1 flex-shrink-0" />
+          <div className="flex-1 min-w-0">
             <Label htmlFor="mszafir" className="font-semibold text-base">
               Przez aplikację mSzafir
             </Label>
@@ -164,11 +164,11 @@ const SignatureMethodSelection = () => {
             <div className="mt-2">
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" size="sm">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mr-2">
+                  <Button variant="outline" size="sm" className="flex flex-wrap items-center text-xs sm:text-sm text-left break-words max-w-full">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mr-2 flex-shrink-0">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                     </svg>
-                    Sprawdź informacje o Kwalifikowanym Podpisie mSzafir
+                    <span>Sprawdź informacje o Kwalifikowanym Podpisie mSzafir</span>
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[625px]">
@@ -195,9 +195,9 @@ const SignatureMethodSelection = () => {
         </div>
 
         {/* Option 4: Kwalifikowany podpis elektroniczny */}
-        <div className="flex items-start p-4 border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
-          <RadioGroupItem value="kwalifikowany" id="kwalifikowany" className="mr-3 mt-1" />
-          <div className="flex-1">
+        <div className="flex items-start p-4 border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors max-w-full overflow-hidden">
+          <RadioGroupItem value="kwalifikowany" id="kwalifikowany" className="mr-3 mt-1 flex-shrink-0" />
+          <div className="flex-1 min-w-0">
             <Label htmlFor="kwalifikowany" className="font-semibold text-base">
               Kwalifikowany podpis elektroniczny
             </Label>
@@ -209,11 +209,11 @@ const SignatureMethodSelection = () => {
             <div className="mt-2">
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" size="sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mr-2">
+                  <Button variant="outline" size="sm" className="flex flex-wrap items-center text-xs sm:text-sm text-left break-words max-w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mr-2 flex-shrink-0">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                     </svg>
-                    Sprawdź informacje o Kwalifikowanym Podpisie Elektronicznym
+                    <span>Sprawdź informacje o Kwalifikowanym Podpisie Elektronicznym</span>
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[625px]">
