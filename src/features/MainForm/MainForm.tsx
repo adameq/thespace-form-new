@@ -3,12 +3,14 @@ import ContactDetailsSection from "@/features/ContactDetails/ContactDetailsSecti
 import PersonalDataSection from "@/features/PersonalData/PersonalDataSection";
 import PepDeclarationSection from "@/features/PepDeclaration/PepDeclarationSection";
 import CompanyDataSection from "@/features/CompanyData/CompanyDataSection";
-import { Button } from "@/components/ui/button"; // Added Button import
+import SignatureMethodSelection from "@/features/SignatureMethod/SignatureMethodSelection";
+import { Button } from "@/components/ui/button";
 
 const MainForm = () => {
   return (
     <div className="container mx-auto p-4 space-y-8">
       <h1 className="text-2xl font-bold mb-4">Formularz</h1>
+      <SignatureMethodSelection />
       <UserTypeSelection />
       <ContactDetailsSection />
       <PersonalDataSection />

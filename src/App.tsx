@@ -1,6 +1,6 @@
 import './App.css';
 import { Toaster as Sonner } from 'sonner';
-import { MainForm } from './features/MainForm/MainForm';
+import MainForm from './features/MainForm/MainForm';
 
 function App() {
   return (
